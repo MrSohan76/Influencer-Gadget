@@ -1,0 +1,117 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ /* shared styles */
+ *{
+    margin: 0;
+    padding: 0;
+
+ }
+body{
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+.display-flex{
+    display: flex;
+}
+
+
+nav{
+    justify-content: space-between;
+    align-items: center;
+    margin:0 120px;
+    margin-top: 66px;
+}
+
+nav h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+nav .link-container{
+     justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+nav li{
+    list-style: none;
+}
+nav li>a{
+    text-decoration: none;
+    font-size: .92rem;
+    font-weight: 600;
+    color: #3A3A3A;
+}
+
+/* journey section */
+.journey-container{
+     justify-content: space-between;
+    align-items: center;
+    margin:0 120px;
+    padding-bottom: 30px;
+}
+.journey-container influencers-heading{
+  color: #3A3A3A;
+font-size: 3.2rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.influencers p{
+    color: #3A3A3A;
+font-size: .7rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin:15px 0;
+
+}
+.influencers button{
+  border-radius: 41px;
+background: #E02C6D;
+padding: 10px 24px;
+border: none;
+}
+.btn-pr span{
+    color: #FFF;
+font-size: .9rem;
+font-style: normal;
+font-weight: 500;
+
+}
+
+.img-bg{
+    margin-top: 70px;
+    margin-right: 30px;
+    background:  url(../images/Circle\ design.svg) ;
+}
+.img-bg img{
+    width: 100%;
+}
+
+.logos .img-container{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    margin: 50px 165px;
+}
+
+@media screen and (max-width:764px) {
+    nav,
+    .journey-container,
+    .link-container
+    {
+        flex-direction: column;
+    }
+    nav{
+        margin: 0;
+        margin-top: 60px;
+    }
+    .journey-container{
+        margin: 10px;
+        flex-direction: column-reverse;
+    }
+    .influencers{
+        text-align: center;
+        margin: 20px 0;
+    }
+   
+    
