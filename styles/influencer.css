@@ -104,12 +104,25 @@
  }
 
  /* collection section */
+
+ .card-heading {
+     text-align: center;
+     margin: 30px 0;
+     color: #3A3A3A;
+     font-size: 1.4rem;
+     font-style: normal;
+     font-weight: 500;
+     line-height: 70px;
+
+ }
+
  .collection {
      margin: 40px 190px;
      display: grid;
      grid-template-columns: repeat(3, 1fr);
      /* control space here */
      padding: 0;
+     margin-bottom: 80px;
  }
 
 
@@ -143,25 +156,89 @@
      font-weight: 500;
      line-height: 40px;
      margin-bottom: 15px;
-    
- }
- .card h5{
-    color: var(--gray-80, #5E6366);
-font-family: Roboto;
-font-size: .9rem;
-font-weight: 700;
-line-height: 22px; 
-letter-spacing: 0.1px;
+
  }
 
- .card p{
-    color: var(--Gray-50, #787885);
-font-family: Inter;
+ .card h5 {
+     color: var(--gray-80, #5E6366);
+     font-family: Roboto;
+     font-size: .9rem;
+     font-weight: 700;
+     line-height: 22px;
+     letter-spacing: 0.1px;
+ }
+
+ .card p {
+     color: var(--Gray-50, #787885);
+     font-family: Inter;
+     font-size: .9rem;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 143%;
+     letter-spacing: 0.252px;
+ }
+
+ /* feature section */
+ .feature-cnt {
+     margin: 30px 165px;
+     gap: 120px;
+     padding-top: 80px;
+     margin-left: 240px;
+ }
+
+ .featured-product h2 {
+     color: #0A0826;
+     font-size: 2.2rem;
+     font-weight: 700;
+     line-height: 60px;
+ }
+
+ .featured-product p {
+     color: #6C6C6C;
+     font-size: 1rem;
+     font-weight: 600;
+     line-height: 28px;
+     margin: 20px 0;
+ }
+
+ .featured-product button {
+     border-radius: 41px;
+     background: #E02C6D;
+     padding: 10px 24px;
+     border: none;
+ }
+
+ .featured-product span {
+     color: #FFF;
+     font-size: .9rem;
+     font-style: normal;
+     font-weight: 500;
+ }
+
+ /* footer */
+ footer {
+     background-color: #0A0826;
+     margin-top: 100px;
+ }
+
+ .footer-content {
+     padding: 60px 0;
+     text-align: center;
+ }
+
+ .footer-content h2 {
+     color: #FFF;
+     font-size: 1.5rem;
+     font-weight: 700;
+     margin: 10px 0;
+
+ }
+ .footer-content p{
+    color: var(--Text-Gray-300, #D9DBE1);
+font-family: Manrope;
 font-size: .9rem;
-font-style: normal;
 font-weight: 700;
-line-height: 143%; 
-letter-spacing: 0.252px;
+line-height: 24px; 
  }
 
  @media screen and (max-width:764px) {
@@ -185,5 +262,28 @@ letter-spacing: 0.252px;
      .influencers {
          text-align: center;
          margin: 20px 0;
+     }
+
+     .logos .img-container {
+         grid-template-columns: repeat(3, 1fr);
+         margin: 0;
+         padding-left: 15px;
+     }
+
+     .collection {
+         margin: 0;
+         grid-template-columns: repeat(1, 1fr);
+         padding: 0;
+     }
+
+     .card {
+         width: 95%;
+     }
+     .feature-cnt{
+        flex-direction: column-reverse;
+        margin: 5px 29px;
+     }
+     .btn-text{
+        text-align: center;
      }
  }
